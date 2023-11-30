@@ -1,0 +1,266 @@
+/* Estilização das textos, fontes e imagem de fundo*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+  .fundo{
+    background-image: url("../img/fundo-de-tudo.png");/*Imagem de fundo da pagina*/
+    background-repeat: repeat;
+
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 20px;
+    padding: 50px;
+  }
+  h1 {
+    font-family: 'Manrope','serif';/*fontes dos textos de h1*/
+    font-size: 3rem; /*tamanho das fontes dos textos de h1*/
+    text-align: center;/*centralizando as fontes dos textos de h1*/
+  }
+  
+  h3 {
+    font-family: 'Manrope','serif';/*fontes dos textos de h3*/
+    font-size: 3rem;/*tamanho das fontes dos textos de h3*/
+    text-align: center;/*centralizando as fontes dos textos de h3*/
+  }
+
+
+  
+  .principal p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;/*tamanho das fontes dos textos de paragrafos */
+    text-align: center; /*centralizando as fontes dos paragrafos*/
+    justify-content: center;
+    margin: 10px;/*margem fontes dos textos dos paragrafos */
+    
+  }
+
+  /* Estilização das opções no icones*/
+.opcoes img {
+    width: 20px;/*largura dos icones em 20px*/
+    height: auto;
+    margin-left: 5px;/*altura dos icones em 5px*/
+  }
+/* Estilização das opções no icones das redes de cima*/
+  .opcoes2 img {
+    width: 25%;/*largura dos icones em 20px*/
+    height: auto;
+    margin-left: 5px;/*altura dos icones em 5px*/
+  }
+  
+  .gallery-container p {
+    font-family: 'Courier New', Courier;
+    color: black;
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+/* Estilização dos mapas*/
+#mapa {
+  gap: 100px;
+  padding: 10px 20px 5px;
+  margin: 40px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+  /* Estilização do footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(111, 181, 238);/*cor do footer*/
+    color: #ffffff;
+    padding: 20px;/*tamanho do footer*/
+  }
+  
+  /* Estilização do icones */
+  .cabecalho {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    padding: 10px 20px 5px;
+  }
+
+  .cabecalho p{
+      font-family: 'Open Sans', sans-serif;/*fontes dos textos de paragrafo*/
+      flex-direction: column;
+      font-size: 1rem; /*tamanho das fontes dos textos de paragrafo*/
+      text-align: center;/*centralizando as fontes dos textos de paragrafo*/
+    }
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.cabecalho img {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilização da logo do footer*/
+.cabecalho {
+    align-items: center;/*centralizar a logo do footer*/
+    margin: 20px;
+    justify-content: center;/*centralizar a logo do footer*/
+  }
+  
+.logo img{
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+   /*Estilização do cadastro de usuario*/
+
+   form {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+
+   }
+
+  .form-input {
+    --width-of-input: 80%;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+   .input {
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
+/*Implementando a estilização do auto contraste*/
+
+.box {
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box select {
+  background-color: #9cb6ea;
+  color: black;
+  padding: 12px;
+  width: 80%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: "\f13a";
+  width: 0%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+.button-enviar {
+  margin-top: 20%;
+  background-color: #f3f7fe;
+  color: black;
+  border: solid 1px #5891ff;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.button-enviar:hover {
+  background-color: #5891ff;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+.high-contrast {
+  background-color: #1a1a1a;
+  background-image: url("../img/");
+  color: white;
+}
+
+.high-contrast .fundo{
+  background-image: url("../img/");
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="../image/x-icon" href="../img/logo.png"> 
+<script src="../js/auto-contraste.js"></script>
+    <title>Login - Mentor Sense</title>
+</head>
+
+<body>
+    <div id="form" class="container">
+       <a href="../home.html"><img src="../img/icons8-voltar-48.png" class="botaovoltar"></a>
+       <h1>Tela de Login</h1>
+
+        <form>
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required/>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required/>
+            <a href="../home.html"> <button type="button">Enviar</button></a>
+
+
+<div class="mundo">
+                <a href="cadastro.html">Não tem cadastro? Clique aqui</a>
+            </div> <!-- <a href="home.html" button type="submit">enviar</a> uma possivel opção para redirecionar o "enviar a home"-->
+
+
+                <!--botão do auto contraste-->
+
+           
+                <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                      <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                  </div>
+                  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                  <script>
+                    new window.VLibras.Widget('https://vlibras.gov.br/app');
+                  </script>
+
+<button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste"><span class="material-symbols-outlined">
+</span><img src="../img/logo.png" width="50px" height="50px"><p>Auto Contraste</p></button>
+</body>
+
+</html>

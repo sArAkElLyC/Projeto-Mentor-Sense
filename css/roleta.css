@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+
+/*estilização roleta*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: #70a7f0;
+  background-image: url("../img/blue-roleta.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixaprincipal {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.caixaprincipal:after {
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('arrow-left.png') no-repeat;
+  background-size: 32px;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.caixa {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  overflow: hidden;
+  transition: all ease 5s;
+}
+
+span {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.span1 {
+  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color:#a2f6b5;
+  top: 120px;
+  left: 0;
+}
+
+.span2 {
+  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  background-color: #fdcae1;
+  top: 120px;
+  right: 0;
+}
+
+.span3 {
+  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  background-color: #fdfd96;
+  bottom: 0;
+  left: 120px;
+}
+
+.span4 {
+  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: #ba9df4;
+  top: 0;
+  left: 120px;
+}
+
+.caixa1 .span3 b {
+  transform: translate(-50%, -50%) rotate(-270deg);
+}
+
+.caixa1 .span1 b,
+.caixa2 .span1 b {
+  transform: translate(-50%, -50%) rotate(185deg);
+}
+
+.caixa2 .span3 b {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.caixa1 .span4 b,
+.caixa2 .span4 b {
+  transform: translate(-50%, -50%) rotate(-85deg);
+}
+
+span b {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caixa2 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-135deg);
+}
+
+.girar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-color: #001aff;
+  color: #fff;
+  box-shadow: 0 5px 20px #000;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.girar:active {
+  width: 85px;
+  height: 85px;
+  font-size: 20px;
+}
+
+.caixaprincipal.animate:after {
+  animation: animarFlecha 0.7s ease infinite;
+
+}
+
+@keyframes animarFlecha {
+  50% {
+    right: -40px;
+  }
+}
+
+.seta {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  height: 49px;
+}
+
+.seta img {
+  width: 70px;
+}
+
+/*fim*/
+
+/*estilização lista de tarefas*/
+
+.lista {
+  width: 30%;
+}
+
+input {
+  font-size: 150%;
+  width: 80%;
+  padding-left: 10%;
+}
+.lista-ib{
+  display: flex;
+}
+
+button.add {
+  padding: 5%;
+  cursor: pointer;
+  background: rgb(85, 172, 243);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  padding-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 80px;
+  width: 24%;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+.item.clicado {
+  background: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 55%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 25%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.delete {
+  background: rgb(0, 140, 255);
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*estilos para auto contraste}*/
+
+.high-contrast {
+  background-color: #1a1a1a;
+  background-image: url("../img/");
+}
+
+.high-contrast p{
+  color: white;
+}
+
+.high-contrast h1{
+  color: white;
+}
+
+.high-contrast h3{
+  color: white;
+}
+
+  
+

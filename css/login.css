@@ -1,0 +1,106 @@
+html,body {
+    height: 100%;
+      margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81c9fa;
+    background-image: url("../img/4.webp");
+    background-repeat: no-repeat; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 5%;
+    width: 10%;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10%;
+}
+
+
+/*como tem 2 input a forma mais facil de fazer sem repertir é essa*/
+form input[type="text"],
+form input[type="password"] {
+    padding: 9px;
+    border-radius: 9px;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* cursor: pointer; serve pra colocar a mãozinha como mouse*/
+button[type="button"] {
+    background-color: #81c9fa;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+button[type="button"]:hover {
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.mundo {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.mundo a {
+    text-decoration: none;
+    color: rgb(169, 29, 29);
+
+}
+
+.mundo a:hover {
+    color: #000000;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.botaovoltar{
+    width: 10%;
+    height: 10%;
+    margin: 0 auto;
+    margin-right: 100%;
+}
+/*estilos para auto contraste}*/
+.high-contrast .container{
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 5%;
+    max-width: 400px;
+    color: white;
+    width: 10%;
+}
+
+.high-contrast .mundo a:hover{
+    color: white;
+}
+

@@ -1,0 +1,278 @@
+/* Definições iniciais do estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fundo-de-tudo.png");/*Imagem de fundo da pagina*/
+    background-repeat: repeat;
+}
+
+    
+    h1 {
+        font-family: 'Manrope','serif';
+        font-size: 3rem;
+        color: rgb(40, 111, 211);
+        text-align: center;
+    }
+
+   h2 {
+   font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 0, 0);
+
+    }
+        
+   h3 {
+    font-family:'Manrope','serif';
+    font-size: 2rem;
+        color: rgb(57, 118, 168);
+
+    }
+
+    .p {
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 130%;/*tamanho das fontes dos textos de paragrafos */
+      text-align: center; /*centralizando as fontes dos paragrafos*/
+      margin: 30px;/*margem fontes dos textos dos paragrafos */
+    }
+    
+    .cadastro {
+        width: 7px;
+        height: 7px; 
+        align-items: normal;
+        display: block;
+        float: right;
+        width: 15%;
+    }
+
+    .logo {
+        max-width: 100px; /* Define a largura máxima da imagem do icone. */
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+
+/* Estilos para o contênier dos cartões*/
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Estilos para os cartões individuais*/
+
+
+
+/* Estilos aplicados quando a largura da tela é de no máximo 768px */
+
+@media(max-width:768px){
+    .card-container{
+        grid-template-columns: 1fr;
+       
+    }
+}
+
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button a:hover{
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: #65c4e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5 auto;
+    display: block;
+    
+
+ }
+
+h1 {
+    color:rgb(0, 0, 0);
+}
+
+#imagem2 {
+
+    align-items: baseline;
+    display:block;
+    margin: 0px auto;
+    width: 5%;
+    height: 100px;
+}
+
+#imagem3 {
+
+    display:block;
+    margin: 0px auto;
+    width: 5%;
+    max-width:100px;
+    height: 50px;
+    }
+
+    .lupa img {
+        width: 7px;
+        height: 7px; 
+        align-items: normal;
+        display: block;
+        float: right;
+        width: 15%;
+        /* Define a largura máxima da imagem do icone. */
+    }
+
+
+.depoimentos{
+    margin: 5rem;
+}
+
+/*estilos para auto contraste}*/
+.high-contrast {
+    background-color: #1a1a1a;
+    background-image: url("../img/");
+}
+
+.high-contrast .depoimentos {
+    color: white;
+}
+/*fim da página*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(111, 181, 238);
+    color: #000000;
+    padding: 50px;
+ }
+ 
+/* Estilização do icones */
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    margin: 1px;
+    color: #fff;
+  }
+  
+  .cabecalho#log{
+    align-items: center;
+  }
+
+  /* Estilização das opções no icones*/
+  .redes-sociais img {
+    width: 20px;
+    height: auto;
+    padding: 10px;
+    margin-left: 15px;
+
+  }
+
+  /*fim do footer*/
+
+
+  #mais{display: none}
+
+  /* Estilização das opções no icones*/
+.opcoes img {
+    width: 20px;/*largura dos icones em 20px*/
+    height: auto;
+    margin-left: 5px;/*altura dos icones em 5px*/
+  }
+  
+  .gallery-container p {
+    font-family: 'Courier New', Courier;/*texto do footer com paragrafo*/
+    color: black;/*texto do footer com preto*/
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  
+  
+  /* Estilização do footer*/
+  
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(111, 181, 238);/*cor do footer*/
+    color: #000000;
+    padding: 50px;/*tamanho do footer*/
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cabecalho img {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilização da logo do footer*/
+  .cabecalho {
+    align-items: center;/*centralizar a logo do footer*/
+    margin: 10px;
+    justify-content: center;/*centralizar a logo do footer*/
+  }
+  
+  .logo img{
+  display: flex;
+  padding: 89px;
+  justify-content: center;
+  }
+    /* Estilização do footer*/
+  
+    footer{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background: rgb(111, 181, 238);/*cor do footer*/
+      color: #ffffff;
+      padding: 20px;/*tamanho do footer*/
+    }
+  
+  .cabecalho {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cabecalho img {
+    margin: 10px; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    display: flex;
+    padding: 89px;
+  }
+
+  /* Tablets*/
+
+  @media screen and (max-width: 1024px) {
+     section, aside{
+      width: 100%;
+      padding: 0 auto;
+     }
+  }
+
+  /* Celular*/
+
+  @media screen and (max-width: 1360px) {
+    nav li {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+

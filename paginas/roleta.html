@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/roleta.css">
+  <link rel="stylesheet" href="../css/button.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="icon" type="image/x-icon" href="../img/logo.png">
+  <title>Mentor Sense</title>
+</head>
+
+
+  <body background-image="img/funfo da roleta azul .png">
+
+
+    <!--Menu-->
+    <div class="menu">
+      <div id="logo">
+          <img src="../img/logo verdadeiras.png" width="180px" height="90px">
+      </div>
+      <nav class="nav">
+          <ul>
+              <li><a  href="../home.html">Home</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a  href="teste.html">Depoimentos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="chat.html">Chat</a></li>
+              <li><a class="ativado" href="roleta.html">Desafio</a></li>  
+              <li><a href="login.html" id="log">Login</a></li>
+    
+          </ul>
+    </nav>       
+  </div>
+  <!--fim do menu -->
+  <div class="container">
+    <!--começo roleta-->
+    <div class="principal">
+
+      <div class="seta">
+        <img src="../img/seta-para-baixo.png">
+      </div>
+
+
+      <div id="caixaprincipal" class="caixaprincipal">
+        <div id="caixa" class="caixa">
+          <div class="caixa1">
+            <span class="span1"><b>Exercícios Físicos</b></span>
+            <span class="span2"><b>Autocuidado</b></span>
+            <span class="span3"><b>Cozinhar</b></span>
+            <span class="span4"><b>Leitura</b></span>
+          </div>
+          <div class="caixa2">
+            <span class="span1"><b>Estudos</b></span>
+            <span class="span2"><b>Roda de conversas</b></span>
+            <span class="span3"><b>Organizar moradia</b></span>
+            <span class="span4"><b>Passeio</b></span>
+          </div>
+        </div>
+        <button class="girar" onclick="funcaoGirar()">GIRAR</button>
+      </div>
+    </div>
+
+
+    <!--lista de tarefas-->
+    <div id="lista"  class="lista">
+      <h1>Lista de Tarefas</h1>
+      <div class="lista-ib">
+        <input id="inputTarefa" type="text" placeholder="Digite Sua Tarefa">
+        <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>  
+      </div>
+    </div>
+  </div>
+
+  <main id="areaLista">
+    <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste"><span class="material-symbols-outlined">
+</span><img src="../img/logo.png" width="50px" height="50px"><p>Auto Contraste</p></button>
+
+  </main>
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+<script src="../js/auto-contraste.js"></script>
+  <script src="../js/roleta.js"></script>
+</body>
+</html>

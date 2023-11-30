@@ -1,0 +1,53 @@
+/* Estilização do footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(111, 181, 238);/*cor do footer*/
+    color: #ffffff;
+    padding: 20px;/*tamanho do footer*/
+  }
+  
+.cabecalho {
+    display: flex;
+    align-items: center;
+  }
+  
+.cabecalho img {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilização da logo do footer*/
+.cabecalho {
+    align-items: center;/*centralizar a logo do footer*/
+    margin: 20px;
+    justify-content: center;/*centralizar a logo do footer*/
+  }
+  
+.logo img{
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+    /* Estilização das opções no icones*/
+.icones img {
+    width: 20px;/*largura dos icones em 20px*/
+    height: auto;
+    margin-left: 5px;/*altura dos icones em 5px*/
+  }
+  
+  .gallery-container p {
+    font-family: 'Courier New', Courier;/*texto do footer com paragrafo*/
+    color: black;/*texto do footer com preto*/
+    text-align: center;
+    height: auto;
+    width: auto;
+  }

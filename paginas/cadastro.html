@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <script src="../js/auto-contraste.js"></script>
+</head>
+<title>Cadastro - Mentor Sense</title>
+
+<body>
+    <div  id="form" class="container">
+      <a href="login.html"><img src="../img/icons8-voltar-48.png" class="botaovoltar"></a>
+        <form> <!-- área para preencher os campos/ nome, e-mail, etc-->
+            <h1>Cadastro<img src="../img/logo.png" width="70px" height="70px"></h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"  />
+
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="email" name="email"/>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"/>
+
+            <label for="confirmar">Confirmar Senha:</label>
+            <input type="password" id="password" name="password" />
+
+            <a href="login.html"> <button type="button">Cadastrar</button></a>
+        </form>   
+     </div>
+
+     <!--botão do auto contraste-->
+     <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste"><span class="material-symbols-outlined">
+    </span><img src="../img/logo.png" width="50px" height="50px"><p>Auto Contraste</p></button>
+     <!--acessibilidade em libras-->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+ 
+
+</body>
+
+</html>
